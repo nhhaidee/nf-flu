@@ -40,6 +40,7 @@ include { MULTIQC                                             } from '../modules
 include { MQC_VERSIONS_TABLE                                  } from '../modules/local/mqc_versions_table'
 include { GENIN2                                              } from '../modules/local/genin2'
 include { NEXTCLADE                                           } from '../subworkflows/nextclade'
+include { WAVESEEKERNET_ANALYZE                               } from '../modules/local/waveseekernet'
 
 workflow NANOPORE {
 
@@ -59,6 +60,9 @@ workflow NANOPORE {
   def summary_params = NfcoreSchema.params_summary_map(workflow, params, json_schema)
 
   ch_versions = Channel.empty()
+    // Collect all matching weight files into a single list channel
+  ch_ws_config  = file(params.waveseekernet_config, checkIfExists: true)
+  ch_ws_weights = params.waveseekernet_weights_dir
 
   ch_input = CHECK_SAMPLE_SHEET(Channel.fromPath(params.input, checkIfExists: true))
 
@@ -320,6 +324,16 @@ workflow NANOPORE {
     )
     ch_versions = ch_versions.mix(NEXTCLADE.out.versions)
   }
+  // Run ensemble prediction separately on each sample
+  ch_consensus_and_cds = ch_cat_consensus_fasta
+    .join(POST_TABLE2ASN.out.cds_nt_fasta)
+  // Run WaveSeekerNet prediction & SHAP codon analysis
+  WAVESEEKERNET_ANALYZE(
+    ch_consensus_and_cds,
+    ch_ws_config,
+    ch_ws_weights
+  )
+  ch_versions = ch_versions.mix(WAVESEEKERNET_ANALYZE.out.versions)
 
   workflow_summary    = Schema.params_summary_multiqc(workflow, summary_params)
   ch_workflow_summary = Channel.value(workflow_summary)

@@ -1,0 +1,242 @@
+{
+  "PB2": {
+    "seq_len": 2400,
+    "patch_size": [12, 5],
+    "backgrounds": [
+      "PB2/background_0.npy",
+      "PB2/background_1.npy",
+      "PB2/background_2.npy",
+      "PB2/background_3.npy",
+      "PB2/background_4.npy",
+      "PB2/background_5.npy",
+      "PB2/background_6.npy",
+      "PB2/background_7.npy",
+      "PB2/background_8.npy",
+      "PB2/background_9.npy"
+    ],
+    "weights": [
+      "PB2/weight_0.pt",
+      "PB2/weight_1.pt",
+      "PB2/weight_2.pt",
+      "PB2/weight_3.pt",
+      "PB2/weight_4.pt",
+      "PB2/weight_5.pt",
+      "PB2/weight_6.pt",
+      "PB2/weight_7.pt",
+      "PB2/weight_8.pt",
+      "PB2/weight_9.pt"
+    ],
+    "logits": "PB2/pre2020_logits.npy",
+    "y_true": "PB2/pre2020_y_true.npy"
+  },
+  "PB1": {
+    "seq_len": 2364,
+    "patch_size": [12, 5],
+    "backgrounds": [
+      "PB1/background_0.npy",
+      "PB1/background_1.npy",
+      "PB1/background_2.npy",
+      "PB1/background_3.npy",
+      "PB1/background_4.npy",
+      "PB1/background_5.npy",
+      "PB1/background_6.npy",
+      "PB1/background_7.npy",
+      "PB1/background_8.npy",
+      "PB1/background_9.npy"
+    ],
+    "weights": [
+      "PB1/weight_0.pt",
+      "PB1/weight_1.pt",
+      "PB1/weight_2.pt",
+      "PB1/weight_3.pt",
+      "PB1/weight_4.pt",
+      "PB1/weight_5.pt",
+      "PB1/weight_6.pt",
+      "PB1/weight_7.pt",
+      "PB1/weight_8.pt",
+      "PB1/weight_9.pt"
+    ],
+    "logits": "PB1/pre2020_logits.npy",
+    "y_true": "PB1/pre2020_y_true.npy"
+  },
+  "PA": {
+    "seq_len": 2310,
+    "patch_size": [14, 5],
+    "backgrounds": [
+      "PA/background_0.npy",
+      "PA/background_1.npy",
+      "PA/background_2.npy",
+      "PA/background_3.npy",
+      "PA/background_4.npy",
+      "PA/background_5.npy",
+      "PA/background_6.npy",
+      "PA/background_7.npy",
+      "PA/background_8.npy",
+      "PA/background_9.npy"
+    ],
+    "weights": [
+      "PA/weight_0.pt",
+      "PA/weight_1.pt",
+      "PA/weight_2.pt",
+      "PA/weight_3.pt",
+      "PA/weight_4.pt",
+      "PA/weight_5.pt",
+      "PA/weight_6.pt",
+      "PA/weight_7.pt",
+      "PA/weight_8.pt",
+      "PA/weight_9.pt"
+    ],
+    "logits": "PA/pre2020_logits.npy",
+    "y_true": "PA/pre2020_y_true.npy"
+  },
+  "HA": {
+    "seq_len": 1804,
+    "patch_size": [11, 5],
+    "backgrounds": [
+      "HA/background_0.npy",
+      "HA/background_1.npy",
+      "HA/background_2.npy",
+      "HA/background_3.npy",
+      "HA/background_4.npy",
+      "HA/background_5.npy",
+      "HA/background_6.npy",
+      "HA/background_7.npy",
+      "HA/background_8.npy",
+      "HA/background_9.npy"
+    ],
+    "weights": [
+      "HA/weight_0.pt",
+      "HA/weight_1.pt",
+      "HA/weight_2.pt",
+      "HA/weight_3.pt",
+      "HA/weight_4.pt",
+      "HA/weight_5.pt",
+      "HA/weight_6.pt",
+      "HA/weight_7.pt",
+      "HA/weight_8.pt",
+      "HA/weight_9.pt"
+    ],
+    "logits": "HA/pre2020_logits.npy",
+    "y_true": "HA/pre2020_y_true.npy"
+  },
+  "NP": {
+    "seq_len": 1586,
+    "patch_size": [13, 5],
+    "backgrounds": [
+      "NP/background_0.npy",
+      "NP/background_1.npy",
+      "NP/background_2.npy",
+      "NP/background_3.npy",
+      "NP/background_4.npy",
+      "NP/background_5.npy",
+      "NP/background_6.npy",
+      "NP/background_7.npy",
+      "NP/background_8.npy",
+      "NP/background_9.npy"
+    ],
+    "weights": [
+      "NP/weight_0.pt",
+      "NP/weight_1.pt",
+      "NP/weight_2.pt",
+      "NP/weight_3.pt",
+      "NP/weight_4.pt",
+      "NP/weight_5.pt",
+      "NP/weight_6.pt",
+      "NP/weight_7.pt",
+      "NP/weight_8.pt",
+      "NP/weight_9.pt"
+    ],
+    "logits": "NP/pre2020_logits.npy",
+    "y_true": "NP/pre2020_y_true.npy"
+  },
+  "NA": {
+    "seq_len": 1488,
+    "patch_size": [12, 5],
+    "backgrounds": [
+      "NA/background_0.npy",
+      "NA/background_1.npy",
+      "NA/background_2.npy",
+      "NA/background_3.npy",
+      "NA/background_4.npy",
+      "NA/background_5.npy",
+      "NA/background_6.npy",
+      "NA/background_7.npy",
+      "NA/background_8.npy",
+      "NA/background_9.npy"
+    ],
+    "weights": [
+      "NA/weight_0.pt",
+      "NA/weight_1.pt",
+      "NA/weight_2.pt",
+      "NA/weight_3.pt",
+      "NA/weight_4.pt",
+      "NA/weight_5.pt",
+      "NA/weight_6.pt",
+      "NA/weight_7.pt",
+      "NA/weight_8.pt",
+      "NA/weight_9.pt"
+    ],
+    "logits": "NA/pre2020_logits.npy",
+    "y_true": "NA/pre2020_y_true.npy"
+  },
+  "MP": {
+    "seq_len": 1188,
+    "patch_size": [12, 5],
+    "backgrounds": [
+      "MP/background_0.npy",
+      "MP/background_1.npy",
+      "MP/background_2.npy",
+      "MP/background_3.npy",
+      "MP/background_4.npy",
+      "MP/background_5.npy",
+      "MP/background_6.npy",
+      "MP/background_7.npy",
+      "MP/background_8.npy",
+      "MP/background_9.npy"
+    ],
+    "weights": [
+      "MP/weight_0.pt",
+      "MP/weight_1.pt",
+      "MP/weight_2.pt",
+      "MP/weight_3.pt",
+      "MP/weight_4.pt",
+      "MP/weight_5.pt",
+      "MP/weight_6.pt",
+      "MP/weight_7.pt",
+      "MP/weight_8.pt",
+      "MP/weight_9.pt"
+    ],
+    "logits": "MP/pre2020_logits.npy",
+    "y_true": "MP/pre2020_y_true.npy"
+  },
+  "NS": {
+    "seq_len": 936,
+    "patch_size": [12, 5],
+    "backgrounds": [
+      "NS/background_0.npy",
+      "NS/background_1.npy",
+      "NS/background_2.npy",
+      "NS/background_3.npy",
+      "NS/background_4.npy",
+      "NS/background_5.npy",
+      "NS/background_6.npy",
+      "NS/background_7.npy",
+      "NS/background_8.npy",
+      "NS/background_9.npy"
+    ],
+    "weights": [
+      "NS/weight_0.pt",
+      "NS/weight_1.pt",
+      "NS/weight_2.pt",
+      "NS/weight_3.pt",
+      "NS/weight_4.pt",
+      "NS/weight_5.pt",
+      "NS/weight_6.pt",
+      "NS/weight_7.pt",
+      "NS/weight_8.pt",
+      "NS/weight_9.pt"
+    ],
+    "logits": "NS/pre2020_logits.npy",
+    "y_true": "NS/pre2020_y_true.npy"
+  }
+}
